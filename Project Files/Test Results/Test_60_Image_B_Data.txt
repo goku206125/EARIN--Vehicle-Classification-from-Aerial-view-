@@ -1,0 +1,129 @@
+Augmented validation set accuracy: 98.8 %
+
+Augmented validation set confusion matrix:
+
+[[69496   420   170   118     5    22    10     7    12     2]
+ [  102  8308     4    12     0     0     0     0     0     0]
+ [   73     7  4506     2     0     2     0     0     0     0]
+ [   36     8     3  3147     1     1     0     0     0     0]
+ [    3     1     0     1   517     0     0     0     0     0]
+ [    2     0     1     0     0   252     0     0     0     0]
+ [    3     0     0     0     0     0   245     0     0     0]
+ [    3     3     0     0     0     0     0   181     0     0]
+ [    0     0     0     0     0     0     0     0   252     0]
+ [    3     1     0     0     0     0     0     0     0   185]]
+
+Augmented validation set classification report:
+
+              precision    recall  f1-score   support
+
+           0      0.997     0.989     0.993     70262
+           1      0.950     0.986     0.968      8426
+           2      0.962     0.982     0.972      4590
+           3      0.959     0.985     0.972      3196
+           4      0.989     0.990     0.989       522
+           5      0.910     0.988     0.947       255
+           6      0.961     0.988     0.974       248
+           7      0.963     0.968     0.965       187
+           8      0.955     1.000     0.977       252
+           9      0.989     0.979     0.984       189
+
+    accuracy                          0.988     88127
+   macro avg      0.963     0.985     0.974     88127
+weighted avg      0.988     0.988     0.988     88127
+
+Image 1:
+  Prediction: 0
+  Actual label: 0
+  Probabilities: tensor([1.0000e+02, 7.6233e-05, 3.0232e-07, 1.7249e-04, 3.4293e-09, 1.2542e-06,
+        4.1672e-11, 3.7647e-10, 4.6624e-12, 1.8356e-13], device='cuda:0')
+Image 2:
+  Prediction: 1
+  Actual label: 1
+  Probabilities: tensor([4.9768e+00, 9.4986e+01, 2.0363e-03, 3.2313e-02, 2.2559e-05, 1.0512e-04,
+        1.3941e-09, 2.6120e-03, 1.4963e-09, 1.0622e-07], device='cuda:0')
+Image 3:
+  Prediction: 2
+  Actual label: 2
+  Probabilities: tensor([9.9662e-04, 7.2975e-06, 9.9999e+01, 1.1751e-06, 3.3481e-07, 4.3867e-10,
+        8.9386e-12, 8.7514e-12, 1.8777e-09, 4.0179e-09], device='cuda:0')
+Image 4:
+  Prediction: 3
+  Actual label: 3
+  Probabilities: tensor([7.7481e-01, 2.5518e-05, 4.1465e-07, 9.9225e+01, 1.0169e-07, 1.9787e-09,
+        2.4975e-09, 2.5974e-10, 1.0813e-12, 4.8019e-07], device='cuda:0')
+Image 5:
+  Prediction: 4
+  Actual label: 4
+  Probabilities: tensor([3.0978e-05, 1.1500e-05, 4.2039e-05, 4.3699e-06, 1.0000e+02, 1.9519e-12,
+        1.9818e-19, 2.0654e-14, 8.2087e-11, 2.8283e-18], device='cuda:0')
+Image 6:
+  Prediction: 5
+  Actual label: 5
+  Probabilities: tensor([9.4223e-10, 6.8191e-12, 1.6189e-12, 3.3190e-12, 3.1166e-15, 1.0000e+02,
+        3.9883e-17, 5.4504e-14, 1.2843e-18, 1.2026e-16], device='cuda:0')
+Image 7:
+  Prediction: 6
+  Actual label: 6
+  Probabilities: tensor([1.3385e-06, 3.4015e-11, 6.0544e-13, 1.1707e-12, 1.8880e-11, 1.2852e-18,
+        1.0000e+02, 4.4084e-16, 4.0043e-15, 1.0888e-15], device='cuda:0')
+Image 8:
+  Prediction: 7
+  Actual label: 7
+  Probabilities: tensor([1.6037e-13, 5.0383e-17, 2.5769e-19, 2.9013e-27, 3.7231e-12, 8.8534e-20,
+        1.3630e-30, 1.0000e+02, 2.6276e-23, 2.0807e-22], device='cuda:0')
+Image 9:
+  Prediction: 8
+  Actual label: 8
+  Probabilities: tensor([1.9137e+01, 4.0354e-02, 2.3890e-13, 5.5377e-11, 3.9421e-09, 1.5538e-15,
+        4.5983e-10, 4.6913e-15, 8.0822e+01, 3.2996e-15], device='cuda:0')
+Image 10:
+  Prediction: 9
+  Actual label: 9
+  Probabilities: tensor([8.0262e-05, 3.9340e-06, 1.4799e-08, 6.2952e-09, 2.0651e-07, 1.0632e-13,
+        1.2099e-15, 3.5814e-10, 1.0328e-13, 1.0000e+02], device='cuda:0')
+Image 11:
+  Prediction: 2
+  Actual label: 0
+  Probabilities: tensor([7.5324e+00, 1.3160e-02, 9.2338e+01, 1.1341e-01, 6.8106e-05, 2.2454e-03,
+        2.3767e-05, 3.3924e-04, 2.2187e-07, 3.5029e-07], device='cuda:0')
+Image 12:
+  Prediction: 0
+  Actual label: 1
+  Probabilities: tensor([9.0151e+01, 9.0295e-01, 5.3528e+00, 1.8503e-01, 7.9043e-02, 3.1978e+00,
+        1.2187e-01, 4.4463e-03, 1.7888e-03, 3.6212e-03], device='cuda:0')
+Image 13:
+  Prediction: 0
+  Actual label: 2
+  Probabilities: tensor([5.4741e+01, 4.0434e-01, 4.4855e+01, 3.2353e-04, 3.1109e-08, 8.3234e-09,
+        3.0767e-09, 1.2498e-10, 1.2050e-11, 1.3440e-14], device='cuda:0')
+Image 14:
+  Prediction: 0
+  Actual label: 3
+  Probabilities: tensor([6.2528e+01, 3.8114e-01, 1.0484e-01, 3.6984e+01, 1.6622e-05, 2.4409e-03,
+        2.0694e-07, 1.1202e-05, 1.4063e-07, 4.2637e-06], device='cuda:0')
+Image 15:
+  Prediction: 0
+  Actual label: 4
+  Probabilities: tensor([9.8451e+01, 3.9042e-02, 7.4945e-03, 1.4835e+00, 1.4031e-02, 1.9913e-03,
+        1.8438e-06, 4.1239e-06, 5.9606e-05, 2.9281e-03], device='cuda:0')
+Image 16:
+  Prediction: 2
+  Actual label: 5
+  Probabilities: tensor([7.2207e+00, 2.1344e-02, 6.5802e+01, 2.5810e-04, 1.1683e-03, 2.6933e+01,
+        1.1142e-04, 4.1280e-05, 2.1401e-02, 8.6927e-06], device='cuda:0')
+Image 17:
+  Prediction: 0
+  Actual label: 6
+  Probabilities: tensor([5.8219e+01, 2.9098e-05, 4.9023e-01, 2.3933e-01, 2.2520e-06, 1.8054e-08,
+        4.1051e+01, 1.4200e-07, 6.8825e-08, 7.2936e-10], device='cuda:0')
+Image 18:
+  Prediction: 0
+  Actual label: 7
+  Probabilities: tensor([9.9770e+01, 6.4876e-04, 3.2302e-03, 5.3224e-02, 3.3084e-06, 1.7782e-11,
+        1.0979e-05, 1.7310e-01, 2.3291e-05, 4.9077e-07], device='cuda:0')
+Image 19:
+  Prediction: 0
+  Actual label: 9
+  Probabilities: tensor([6.9132e+01, 1.8444e+00, 2.5122e+01, 7.1881e-04, 2.6360e-08, 1.7561e-13,
+        2.3029e-12, 1.0640e-10, 2.0557e-10, 3.9008e+00], device='cuda:0')
